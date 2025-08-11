@@ -116,3 +116,10 @@ MIT License
 ## Contributing
 
 Pull requests and issues are welcome! Please open an issue to discuss any major changes before submitting a PR.
+
+
+
+
+
+> **Tested:** This script has been tested on a live server with 30+ players.
+

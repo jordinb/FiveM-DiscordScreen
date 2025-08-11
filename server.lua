@@ -46,7 +46,7 @@ RegisterCommand("screen", function(source, args)
                     print(("Screenshot requested from %s (ID: %s) by %s (ID: %s)"):format(
                         targetName, playerId, requesterName, requesterId
                     ))
-                    Citizen.Wait(3000) -- 3 seconds interval between targets
+                    Citizen.Wait(3000) -- 3 seconds interval between targets, not recommended to change this value. (TO-DO, Send screenshots in same message as info embed)
                 end
             end
         end)

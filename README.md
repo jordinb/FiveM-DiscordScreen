@@ -121,5 +121,5 @@ Pull requests and issues are welcome! Please open an issue to discuss any major 
 
 
 
-> **Tested:** This script has been tested on a live server with 30+ players.
+> **Tested:** This script has been tested on our live server with 30+ players.
 

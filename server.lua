@@ -10,7 +10,7 @@
 --=========================
 -- Version Check
 --=========================
-local CURRENT_VERSION = "1.0.0" -- Update this with each release
+local CURRENT_VERSION = "1.0.0" 
 local VERSION_URL = "https://raw.githubusercontent.com/OfficialSnaily/DiscordScreen/main/version.txt"
 
 Citizen.CreateThread(function()
@@ -20,7 +20,7 @@ Citizen.CreateThread(function()
             return
         end
 
-        latest = latest:match("%S+") -- trim whitespace
+        latest = latest:match("%S+") 
         if latest == CURRENT_VERSION then
             print(("[DiscordScreen] You are running the latest version (%s)."):format(CURRENT_VERSION))
         else

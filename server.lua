@@ -7,6 +7,29 @@
     License: MIT
 ]]
 
+--=========================
+-- Version Check
+--=========================
+local CURRENT_VERSION = "1.0.0" -- Update this with each release
+local VERSION_URL = "https://raw.githubusercontent.com/OfficialSnaily/DiscordScreen/main/version.txt"
+
+Citizen.CreateThread(function()
+    PerformHttpRequest(VERSION_URL, function(err, latest, headers)
+        if err ~= 200 or not latest or latest == "" then
+            print("^1[DiscordScreen]^7 Failed to check for updates (error " .. tostring(err) .. ").")
+            return
+        end
+
+        latest = latest:match("%S+") -- trim whitespace
+        if latest == CURRENT_VERSION then
+            print(("[DiscordScreen] You are running the latest version (%s)."):format(CURRENT_VERSION))
+        else
+            print(("[DiscordScreen] New version available: %s (you have %s)."):format(latest, CURRENT_VERSION))
+            print("Visit https://github.com/OfficialSnaily/DiscordScreen to download the latest version.")
+        end
+    end, 'GET', '', {})
+end)
+
 -- Table to track screenshot counts per player
 local screenshotCounts = {}
 -- Table to track last screenshot time per player (for cooldown)

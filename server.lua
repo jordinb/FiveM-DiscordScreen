@@ -65,7 +65,7 @@ RegisterCommand("screen", function(source, args)
             for _, playerId in ipairs(GetPlayers()) do
                 local targetName = GetPlayerName(playerId)
                 if targetName then
-                    TriggerClientEvent("customScreenshot:take", tonumber(playerId), requesterName, requesterId, reason)
+                    TriggerClientEvent("DiscordScreen:take", tonumber(playerId), requesterName, requesterId, reason)
                     print(("Screenshot requested from %s (ID: %s) by %s (ID: %s)"):format(
                         targetName, playerId, requesterName, requesterId
                     ))

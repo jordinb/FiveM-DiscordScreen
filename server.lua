@@ -136,7 +136,7 @@ AddEventHandler("DiscordScreen:sendEmbed", function(playerName, playerId, reques
     }
 
     -- Send the embed to Discord
-    PerformHttpRequest(DISCORD_WEBHOOK, function(err, text, headers)
+    PerformHttpRequest(Config.DISCORD_WEBHOOK, function(err, text, headers)
         if err ~= 204 then
             print("Discord webhook error:", err, text)
         end

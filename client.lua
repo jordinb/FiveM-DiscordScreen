@@ -3,7 +3,7 @@
     ----------------------------
     Listens for screenshot requests from the server, gathers player info,
     and uploads a screenshot to the Discord webhook.
-    Author: Anton (Team Snaily)
+    Author: Anton
     License: MIT
 ]]
 

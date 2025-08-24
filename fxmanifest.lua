@@ -1,7 +1,7 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'Team Snaily (https://snai.ly/team)'
+author 'Team Snaily, Anton\'s workshop'
 description 'Send screenshots to Discord with player info'
 version '1.0.0'
 

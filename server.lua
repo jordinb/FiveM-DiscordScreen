@@ -3,7 +3,7 @@
     ----------------------------
     This script allows admins to request player screenshots and sends detailed info to a Discord webhook.
     Configuration is handled via config.lua.
-    Author: Anton (Team Snaily)
+    Author: Anton 
     License: MIT
 ]]
 

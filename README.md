@@ -5,6 +5,9 @@ A FiveM resource that allows admins to request player screenshots and sends deta
 
 ---
 
+## To-Do List
+- Refactor Webhook Logic For Security
+
 ## Features
 
 - **Admin Screenshot Command:**  
